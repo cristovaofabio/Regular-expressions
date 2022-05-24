@@ -1,5 +1,14 @@
 const text = 'In this moment, Mike is learning regular expressions in JavaScript. What you think about that?';
+const files = [
+    'attention.jpg',
+    'photo.jpeg',
+    'my cat.jpg',
+    'my cat.JPG',
+    'my cat.jpeg',
+    'wife.png',
+    'shopping list.txt'
+];
 
 module.exports = {
-    text
+    text, files
 }
