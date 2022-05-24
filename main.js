@@ -1,4 +1,4 @@
-const { text, files } = require('./base');
+const { text, files, html } = require('./base');
 
 const regExp = /(Mike )(IS LEARNING)/gi;
 const regOrExp = /Mike|JavaScript/gi;
@@ -31,3 +31,7 @@ for (const file of files) {
         console.log(file);
     }
 }
+
+console.log('-----------------------');
+console.log(html.match(/<.+>.+<\/.+>/g)); //greedy
+console.log(html.match(/<.+?>.+?<\/.+?>/g)); //non-greedy

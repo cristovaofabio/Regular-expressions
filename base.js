@@ -8,7 +8,8 @@ const files = [
     'wife.png',
     'shopping list.txt'
 ];
+const html = '<h1>I am a title</h1> <p>Hello, world!</p> <p>Hello again</p>'
 
 module.exports = {
-    text, files
+    text, files, html
 }
