@@ -9,7 +9,8 @@ const files = [
     'shopping list.txt'
 ];
 const html = '<h1>I am a title</h1> <p>Hello, world!</p> <p>Hello again</p>'
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01234 56789';
 
 module.exports = {
-    text, files, html
+    text, files, html, alphabet
 }

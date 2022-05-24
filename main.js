@@ -1,4 +1,4 @@
-const { text, files, html } = require('./base');
+const { text, files, html, alphabet } = require('./base');
 
 const regExp = /(Mike )(IS LEARNING)/gi;
 const regOrExp = /Mike|JavaScript/gi;
@@ -35,3 +35,10 @@ for (const file of files) {
 console.log('-----------------------');
 console.log(html.match(/<.+>.+<\/.+>/g)); //greedy
 console.log(html.match(/<.+?>.+?<\/.+?>/g)); //non-greedy
+
+console.log('-------------------');
+console.log(alphabet.match(/[abc123]+/g)); //only show abc and 123
+console.log(alphabet.match(/[^abc123]/g)); //only exclude abc and 123
+console.log(alphabet.match(/[0-9]/g)); //separate elements
+console.log(alphabet.match(/[0-9]+/g)); //groups of elements
+console.log(alphabet.match(/[a-zA-Z0-9]+/g)); //groups of elements
