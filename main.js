@@ -74,3 +74,9 @@ for (let i = 0; i < 300; i++) {
     }
 }
 */
+
+console.log('----START and FINISH with something----');
+const cpf = '037.471.591-00';
+const cpfRegExp = /^(\d{3}\.){2}\d{3}\-\d{2}$/g;
+
+console.log(cpf.match(cpfRegExp));

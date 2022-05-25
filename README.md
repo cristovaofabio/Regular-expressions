@@ -2,9 +2,13 @@
 ```
 g   - global - find all occurrences
 i   - insensitive
+m   - multiline
 ()  - groups
 |   - or
 \   - insert special character
+^   - start with something
+$   - finish with something
+[^] - negation
 ```
 <b>Quantifiers:</b>
 ```
