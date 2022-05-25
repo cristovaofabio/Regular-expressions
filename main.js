@@ -80,3 +80,7 @@ const cpf = '037.471.591-00';
 const cpfRegExp = /^(\d{3}\.){2}\d{3}\-\d{2}$/g;
 
 console.log(cpf.match(cpfRegExp));
+
+console.log('---Match and Replace------')
+// <(\w)[\s\S]*?> ([\s\S]*?) <\/\1>
+console.log(html.replace(/(<(\w+)[\s\S]*?>)([\s\S]*?)(<\/\2>)/g, '$1 --- $3 --- $4'));
