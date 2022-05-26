@@ -1,4 +1,4 @@
-# Regular-expressions
+# Regular expressions
 ```
 g   - global - find all occurrences
 i   - insensitive
@@ -16,3 +16,7 @@ $   - finish with something
 *   - 0 or N occurrences {0,}
 ?   - 0 or 1 occurrences {0,1}
 ```
+
+## Links 💻
+ - [To test regular expressions](https://regex101.com/)
+ - [Documentation to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
