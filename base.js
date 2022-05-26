@@ -12,7 +12,15 @@ const html = '<h1>I am a title</h1> <p>Hello, world!</p> <p>Hello again</p>'
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01234 56789';
 const cpfNumbers = 'The CPFs are: 000.000.000-00 111.111.111-11 999.999.999-99 555.555.555-55';
 const ips = 'the ips are: 0.0.0.0 192.168.0.1 10.10.5.12 255.255.255.255';
+const lookahead = `
+ONLINE  192.168.0.1 ABCDEF inactive
+OFFLINE  192.168.0.2 ABCDEF active
+ONLINE  192.168.0.3 ABCDEF active
+ONLINE  192.168.0.4 ABCDEF active
+OFFLINE  192.168.0.5 ABCDEF active
+OFFLINE  192.168.0.6 ABCDEF inactive
+`;
 
 module.exports = {
-    text, files, html, alphabet, cpfNumbers, ips
+    text, files, html, alphabet, cpfNumbers, ips, lookahead
 }

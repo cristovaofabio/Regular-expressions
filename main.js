@@ -1,4 +1,4 @@
-const { text, files, html, alphabet, cpfNumbers, ips } = require('./base');
+const { text, files, html, alphabet, cpfNumbers, ips, lookahead } = require('./base');
 
 const regExp = /(Mike )(IS LEARNING)/gi;
 const regOrExp = /Mike|JavaScript/gi;
@@ -84,3 +84,20 @@ console.log(cpf.match(cpfRegExp));
 console.log('---Match and Replace------')
 // <(\w)[\s\S]*?> ([\s\S]*?) <\/\1>
 console.log(html.replace(/(<(\w+)[\s\S]*?>)([\s\S]*?)(<\/\2>)/g, '$1 --- $3 --- $4'));
+
+console.log('---LOOKAHEAD and LOOKBEHIND----');
+
+//all lines that finish with 'active'
+console.log(lookahead.match(/.+[^in]active$/gim));
+
+//don't show 'active' name in lines that contains 'active'
+console.log(lookahead.match(/.+(?=[^in]active)/gim));
+
+//all lines that not contains 'active'
+console.log(lookahead.match(/^(?!.+[^in]active).+$/gim));
+
+//don't show 'OFFLINE' name in lines that don't start with ONLINE
+console.log(lookahead.match(/(?<=ONLINE\s+)\S+.*/gim));
+
+//all lines that don't start with ONLINE:
+console.log(lookahead.match(/^.+(?<!ONLINE.+)$/gim));
